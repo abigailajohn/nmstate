@@ -24,22 +24,23 @@ serving the tests of Nmstate.
 
 - `./examples/` - Contains YAML examples for different configurations.
 
-- `./libnmstate/ifaces/` Contains the classes including the attributes of the 
-interfaces.
+- `./k8s/` - Contains Kubernetes setup and configuration scripts for nmstate.
+
+- `./logo/` - Logo designs for nmstate.  
  
-- `./libnmstate/nispor/` Contains the nmstate nispor plugin, currently for 
-querying kernel network status. 
-
-- `./libnmstate/nm/` Contains the nmstate NetworkManager plugin, currently for 
-querying network status and applying network states. 
-
-- `./libnmstate/plugins/` Contains the plugins supported by default (e.g. ovsdb). 
-
-- `./libnmstate/schemas/` Contains the API schema file.
-
-- `./nmstatectl/` - Contains command lines tools.
-
 - `./packaging/` - Contains packaging utilities.
+
+- `./rust/src/cli/` - Contains the command-line interface code. 
+ 
+- `./rust/src/clib/` - Contains the C bindings for nmstate. 
+
+- `./rust/src/go/nmstate/` - Contains Go language bindings for nmstate. 
+
+- `./rust/src/lib/` - Contains the core library code for nmstate functionality.
+
+- `./rust/src/python/` - Contains Python bindings for nmstate.
+
+- `./rust/src/lib/nispor/` - Contains nmstate nispor library, currently for handling network interface state parsing.
 
 - `./tests/` - Contains tests for unit and integration tests.
 
