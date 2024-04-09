@@ -17,17 +17,17 @@ name = "nmstatectl"
 path = "ncl.rs"
 
 [dependencies]
-nmstate = {path = "../lib", version = "2.2", default-features = false}
-serde_yaml = "0.9"
+nmstate = { workspace = true }
+serde_yaml = { workspace = true }
 clap = { version = "3.1", features = ["cargo"] }
-serde = { version = "1.0", features = ["derive"] }
+serde = { workspace = true }
 env_logger = "0.10.0"
-log = "0.4.14"
-serde_json = "1.0.75"
+log = { workspace = true }
+serde_json = { workspace = true }
 ctrlc = { version = "3.2.1", optional = true }
-uuid = { version = "1.1", features = ["v4"] }
+uuid = { workspace = true }
 chrono = "0.4"
-nispor = { version = "1.2", optional = true }
+nispor = { workspace = true, optional = true }
 toml = "0.8.10"
 
 [features]

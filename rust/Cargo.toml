@@ -6,6 +6,17 @@ members = [
     "src/lib",
 ]
 
+[workspace.dependencies]
+log = "0.4.17"
+serde_yaml = "0.9"
+serde = {version = "1.0.137", default-features = false, features = ["derive"]}
+serde_json = { version = "1.0.75", default-features = false }
+nmstate = { path = "src/lib", version = "2.2", default-features = false }
+nispor = "1.2"
+uuid = { version = "1.1 ", default-features = false, features = ["v4"] }
+nix = { version = "0.26.2", default-features = false, features = ["feature", "hostname"] }
+zbus = { version = "1.9.2", default-features = false} 
+
 [workspace.metadata.vendor-filter]
 # For now we only care about tier 1+2 Linux
 platforms = ["*-unknown-linux-gnu"]
